@@ -717,7 +717,7 @@ bool GraphicBufferSource::calculateCodecTimestamp_l(nsecs_t bufferTimeNs, int64_
     int64_t timeUs = bufferTimeNs / 1000;
     timeUs += mInputBufferTimeOffsetUs;
 
-    if (mCaptureFps > 0. && (mFps > 2 * mCaptureFps || mCaptureFps > 2 * mFps)) {
+    if (mCaptureFps > 0. && (mFps > 2 * mCaptureFps || mCaptureFps > mFps)) {
         // Time lapse or slow motion mode
         if (mPrevCaptureUs < 0LL) {
             // first capture
