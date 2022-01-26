@@ -499,7 +499,6 @@ void RevertOutputFormatIfNeeded(
     // We used to not report changes to these keys to the client.
     const static std::set<std::string> sIgnoredKeys({
             KEY_BIT_RATE,
-            KEY_FRAME_RATE,
             KEY_MAX_BIT_RATE,
             KEY_MAX_WIDTH,
             KEY_MAX_HEIGHT,
