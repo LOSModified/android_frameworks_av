@@ -15,7 +15,6 @@
  */
 
 #define LOG_TAG "C2Store"
-#define LOG_NDEBUG 0
 #include <utils/Log.h>
 
 #include <C2AllocatorBlob.h>
