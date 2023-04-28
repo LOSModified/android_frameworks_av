@@ -80,7 +80,7 @@ using DrmBufferType = hardware::drm::V1_0::BufferType;
 
 namespace {
 
-constexpr size_t kSmoothnessFactor = 4;
+constexpr size_t kSmoothnessFactor = 2;
 
 // This is for keeping IGBP's buffer dropping logic in legacy mode other
 // than making it non-blocking. Do not change this value.
