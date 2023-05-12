@@ -59,6 +59,7 @@ mremap: arg3 == 3 || arg3 == MREMAP_MAYMOVE
 # for FileSource
 readlinkat: 1
 _llseek: 1
+uname: 1
 
 @include /apex/com.android.media/etc/seccomp_policy/crash_dump.arm.policy
 @include /apex/com.android.media/etc/seccomp_policy/code_coverage.arm.policy
