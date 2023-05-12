@@ -45,6 +45,7 @@ mremap: 1
 
 # Required by Sanitizers
 sched_yield: 1
+uname: 1
 
 # Required by MemoryHeapBase for shared memory allocations when libcutils uses
 # memfd.

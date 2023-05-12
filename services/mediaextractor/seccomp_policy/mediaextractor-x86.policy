@@ -58,6 +58,7 @@ gettid: 1
 sched_yield: 1
 getpid: 1
 gettid: 1
+uname: 1
 
 # Required by MemoryHeapBase for shared memory allocations when libcutils uses
 # memfd.

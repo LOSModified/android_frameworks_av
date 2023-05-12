@@ -67,6 +67,7 @@ ftruncate64: 1
 getpid: 1
 gettid: 1
 sched_yield: 1
+uname: 1
 
 # The mmap/mprotect/prctl rules in this file are less restrictive than the rules
 # in the crash_dump policy file. Therefore, include a version of the crash_dump
