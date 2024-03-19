@@ -3141,11 +3141,11 @@ NO_THREAD_SAFETY_ANALYSIS
 {
     const sp<IAfThreadBase> t = thread().promote();
     if (t == nullptr) {
-        return AUDIO_CHANNEL_NONE;
+        return AUDIO_CHANNEL_OUT_STEREO;
     }
     sp<IAfEffectChain> c = chain().promote();
     if (c == nullptr) {
-        return AUDIO_CHANNEL_NONE;
+        return AUDIO_CHANNEL_OUT_STEREO;
     }
 
     if (mThreadType == IAfThreadBase::SPATIALIZER) {
@@ -3180,11 +3180,11 @@ NO_THREAD_SAFETY_ANALYSIS
 {
     const sp<IAfThreadBase> t = thread().promote();
     if (t == nullptr) {
-        return AUDIO_CHANNEL_NONE;
+        return AUDIO_CHANNEL_OUT_STEREO;
     }
     sp<IAfEffectChain> c = chain().promote();
     if (c == nullptr) {
-        return AUDIO_CHANNEL_NONE;
+        return AUDIO_CHANNEL_OUT_STEREO;
     }
 
     if (mThreadType == IAfThreadBase::SPATIALIZER) {
