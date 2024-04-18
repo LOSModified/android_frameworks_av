@@ -21,7 +21,7 @@
 
 #include "VectorArithmetic.h"
 
-void From2iToMono_Float(const LVM_FLOAT* src, LVM_FLOAT* dst, LVM_INT16 n) {
+void From2iToMono_Float(const LVM_FLOAT* src, LVM_FLOAT* dst, LVM_INT32 n) {
     LVM_INT16 ii;
     LVM_FLOAT Temp;
 
