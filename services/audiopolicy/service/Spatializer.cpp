@@ -1197,7 +1197,7 @@ void Spatializer::checkPoseController_l() {
     if (isControllerNeeded && mPoseController == nullptr) {
         mPoseController = std::make_shared<SpatializerPoseController>(
                 static_cast<SpatializerPoseController::Listener*>(this),
-                10ms, std::nullopt);
+                100ms, std::nullopt);
         LOG_ALWAYS_FATAL_IF(mPoseController == nullptr,
                             "%s could not allocate pose controller", __func__);
         mPoseController->setDisplayOrientation(mDisplayOrientation);
